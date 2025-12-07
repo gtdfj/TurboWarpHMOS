@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.xinsoft.game1",
+    "vendor": "example",
+    "versionCode": 1000000,
+    "versionName": "1.1.3",
+    "icon": "$media:layered_image",
+    "label": "$string:EntryAbility_label"
+  }
+}

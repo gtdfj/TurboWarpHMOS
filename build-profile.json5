@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/mac/Desktop/未命名.p12",
+          "storePassword": "0000001A7A0833FAC825D839ABDA968BAC89A882F7C25F1B7D27080974B71F8EDA1EAD7CAA7BB9C24110",
+          "keyAlias": "123",
+          "keyPassword": "0000001AF6540FA08695F91AB6F52E55ED555C4B9BCB53FD6FA49B02F1E33F37854983BDFF7A50A77EBC",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/mac/Desktop/123Release.p7b",
+          "certpath": "/Users/mac/Desktop/123.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
